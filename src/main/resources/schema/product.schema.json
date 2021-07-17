@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://localhost:8000/product.schema.json",
+  "title": "Product",
+  "description": "An instance of the product resource.",
+  "type": "object",
+  "properties": {
+      "product-name": {
+        "$id": "#/properties/product-name",
+        "description": "The unique name for a product.",
+        "type": "string"
+      },
+      "product-description": {
+        "$id": "#/properties/product-description",
+        "description": "Description for a product.",
+        "type": "string"
+      },
+      "product-album": {
+        "$id": "#/properties/product-album",
+        "description": "Album associated to the product.",
+        "type": "string"
+      }
+   }
+}

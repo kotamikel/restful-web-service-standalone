@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://localhost:8000/album.schema.json",
+  "title": "Album",
+  "description": "An instance of the album resource.",
+  "type": "object",
+  "properties": {
+      "album-name": {
+        "$id": "#/properties/album-name",
+        "description": "The unique name for a album.",
+        "type": "string"
+      },
+      "album-description": {
+        "$id": "#/properties/album-description",
+        "description": "Description for a album.",
+        "type": "string"
+      },
+      "album-images": {
+        "$id": "#/properties/album-images",
+        "title": "Images corresponding to respective Album.",
+        "description": "Images associated to the album.",
+        "type": "array"
+      }
+  }
+}

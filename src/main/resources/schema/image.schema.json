@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "http://localhost:8000/image.schema.json",
+  "title": "Image",
+  "description": "An instance of the image resource.",
+  "type": "object",
+  "properties": {
+      "image-title": {
+        "$id": "#/properties/image-title",
+        "description": "The unique title for a image.",
+        "type": "string"
+      },
+      "image-description": {
+        "$id": "#/properties/image-description",
+        "description": "Description for a image.",
+        "type": "string"
+      },
+      "image-albums": {
+        "$id": "#/properties/image-albums",
+        "title": "Albums corresponding to respective Image.",
+        "description": "Albums associated to the image.",
+        "type": "array"
+      }
+   }
+}
