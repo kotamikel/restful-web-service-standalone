@@ -1,0 +1,13 @@
+package com.WebServicesProject.WebServicesExercise;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class WebServicesExerciseApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
