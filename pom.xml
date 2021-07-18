@@ -43,8 +43,9 @@
 		            <target>1.8</target>
 		        </configuration>
 		    </plugin>
+<!--
 		    <plugin>
-				<groupId>org.jsonschema2pojo</groupId>
+	 			<groupId>org.jsonschema2pojo</groupId>
 				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
 				<version>1.0.2</version>
 				<configuration>
@@ -60,7 +61,8 @@
 				    	</goals>
 				  	</execution>
   				</executions>
-			</plugin>
+			</plugin> 
+-->			
 		</plugins>
 	</build>
 
