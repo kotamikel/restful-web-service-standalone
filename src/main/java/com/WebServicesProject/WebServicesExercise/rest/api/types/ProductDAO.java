@@ -23,6 +23,11 @@ public enum ProductDAO {
 	    products.add(product);
 
     }
+	
+	public void post(Product product) {
+		products.add(product);
+	}
+	
     public List<Product> getModel(){
         return products;
     }

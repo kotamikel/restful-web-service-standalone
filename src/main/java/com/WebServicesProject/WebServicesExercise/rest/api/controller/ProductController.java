@@ -7,6 +7,8 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
 import org.springframework.stereotype.Component;
 
 import com.WebServicesProject.WebServicesExercise.rest.api.types.Product;
@@ -25,9 +27,14 @@ public class ProductController {
 		
 	}
 	
+	// 
 	@POST
-    @Consumes("application/json")
-	public Product createProduct(Product product) {
-        return null;
+	@Path("/add")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Product createProduct(Product product){
+		
+		ProductDAO.instance.post(product);
+		
+		return product;
 	}
 }
