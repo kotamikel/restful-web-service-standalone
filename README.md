@@ -1,4 +1,8 @@
-README
+### Java RESTFul Web Service API
+
+Built using:
+- Spring Boot
+- Jersey Framework
 
 ## Build and Run the application
 Follow the steps:
@@ -16,3 +20,16 @@ Follow the steps:
 `http://localhost:8080/productclient/album/add`
 `http://localhost:8080/productclient/image`
 `http://localhost:8080/productclient/image/add`
+
+## Testing
+- All my testing was done via Postman.
+  - I was able to successfully reach `/product`, `/product/add`, `/album`, `/album/add`, `/image`, `/image/add`
+  - I added a product (/product/add) and requested for the products after to see if it was appended to the List - PASS
+- Test classes not included due to having issues with JerseyTest and not being able to process Response/Entity Objects properly.
+  - I removed the test classes to avoid errors.
+
+## Additional Notes
+- Test classes missing - errors with JerseyTest Implementation 
+- AlbumDAO seed data missing Images - setAlbumImages expects a List<Objects> and I could not find a way to store an Album Object as a List<Object>. I cant change the POJO because i generated it using jsonschema2pojo library plugin. When i changed the album.schema.json
+- ImageDAO seed data missing Albums - same applies for setImageAlbums
+
