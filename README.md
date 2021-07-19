@@ -30,6 +30,5 @@ Follow the steps:
 
 ## Additional Notes
 - Test classes missing - errors with JerseyTest Implementation 
-- AlbumDAO seed data missing Images - setAlbumImages expects a List<Objects> and I could not find a way to store an Album Object as a List<Object>. I cant change the POJO because i generated it using jsonschema2pojo library plugin. When i changed the album.schema.json
+- AlbumDAO seed data missing Images - setAlbumImages expects a List<Objects> and I could not find a way to store an Album Object as a List<Object>. I cant change the POJO because i generated it using jsonschema2pojo library plugin. When i modified the album.schema.json file - regardless of the type I was not able to active the type of object the compiler was requiring. 
 - ImageDAO seed data missing Albums - same applies for setImageAlbums
-
