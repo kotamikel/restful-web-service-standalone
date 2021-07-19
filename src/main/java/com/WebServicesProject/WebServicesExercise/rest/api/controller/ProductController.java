@@ -17,17 +17,13 @@ import com.WebServicesProject.WebServicesExercise.rest.api.types.ProductDAO;
 @Component
 @Path("/product")
 @Produces("application/json")
-//@Api(value = "ProductController Resource", produces = "application/json")
 public class ProductController {
 
 	@GET
 	public List<Product> getProducts() {
-		//return ResourceTestGenerator.generateTestProducts();
 		return ProductDAO.instance.getModel();
-		
 	}
 	
-	// 
 	@POST
 	@Path("/add")
 	@Consumes(MediaType.APPLICATION_JSON)

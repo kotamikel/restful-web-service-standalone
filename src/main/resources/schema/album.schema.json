@@ -19,7 +19,7 @@
         "$id": "#/properties/album-images",
         "title": "Images corresponding to respective Album.",
         "description": "Images associated to the album.",
-        "type": "array"
+        "type": "list"
       }
   }
 }
