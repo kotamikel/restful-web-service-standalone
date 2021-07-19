@@ -1,15 +1,16 @@
 package com.WebServicesProject.WebServicesExercise.rest.api.controller;
 
+import java.util.List;
+
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Response;
-
 import org.springframework.stereotype.Component;
 
 import com.WebServicesProject.WebServicesExercise.rest.api.types.Product;
+import com.WebServicesProject.WebServicesExercise.rest.api.types.ProductDAO;
 
 @Component
 @Path("/product")
@@ -18,13 +19,15 @@ import com.WebServicesProject.WebServicesExercise.rest.api.types.Product;
 public class ProductController {
 
 	@GET
-	@Path("/{product-name}")
-	public Response getProductName(@PathParam("product-name") String productName) {
-		return null;
+	public List<Product> getProducts() {
+		//return ResourceTestGenerator.generateTestProducts();
+		return ProductDAO.instance.getModel();
+		
 	}
 	
 	@POST
+    @Consumes("application/json")
 	public Product createProduct(Product product) {
-		return null;
+        return null;
 	}
 }
